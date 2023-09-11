@@ -1,24 +1,6 @@
+import methods
+
 #First project (Calculator)
-
-def add(num_1,num_2):
-    result = num_1+num_2
-    return result
-
-def sub(num_1,num_2):
-    result=num_1-num_2
-    return result
-
-def mul(num_1,num_2):
-    result=num_1*num_2
-    return result
-
-def div(num_1,num_2):
-    if num_2 == 0:
-        print('cannot divded by 0')
-    else:
-        result=num_1/num_2
-        return result
-
 while True:
     
     num_1=float(input('please enter first number: '))
@@ -26,13 +8,13 @@ while True:
     num_2=float(input('please enter second number: '))
 
     if operation == '*':
-        print('result =', mul(num_1,num_2))
+        print('result =', methods.mul(num_1,num_2))
     elif operation == '+':
-        print('result =', add(num_1,num_2))
+        print('result =', methods.add(num_1,num_2))
     elif operation == '-':
-        print('result =', sub(num_1,num_2))
+        print('result =', methods.sub(num_1,num_2))
     elif operation == '/':
-        print('result =', div(num_1,num_2))
+        print('result =', methods.div(num_1,num_2))
     else:
         print('result = none')
         
